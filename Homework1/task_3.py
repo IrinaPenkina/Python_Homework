@@ -10,26 +10,24 @@
 # 385916 -> yes
 # 123456 -> no
 
-flag = True
-
-while flag:
+while True:
     n = int(input('Введите шестизначный номер билета: '))
     if n // 100000 == 0 or n // 100000 > 9:
         print('Введено не шестизначное число. Задача не имеет решения.')
     else:
-        flag = False
+        break
 
 sum1 = 0
 for i in range (3):
-    sum1 += n%10
-    n = n//10
+    sum1 += n % 10
+    n //= 10
 
 # print(sum1)
 
 sum2 = 0
 for i in range (3):
-    sum2 += n%10
-    n = n//10
+    sum2 += n % 10
+    n //= 10
 
 # print(sum2)
 
