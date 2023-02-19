@@ -4,9 +4,9 @@
 # 100 -> 1 (1 + 0 + 0) |
 
 n = int(input('Введите трехзначное число: '))
-sum = n//100
+sum = 0
 
-for i in range(2):
+while n > 0:
     sum += n%10
     n = n//10
 
