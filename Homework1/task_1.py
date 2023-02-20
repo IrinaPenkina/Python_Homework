@@ -11,3 +11,11 @@ while n > 0:
     n //= 10
 
 print(sum)
+
+
+
+
+
+# if 99 < n < 1000:
+#     array = map(int, str(n))
+#     sumDigits = sum(array)
