@@ -23,8 +23,8 @@ print(f"Массив: {lst}")
 k = int(input('Задайте целое число в диапазоне от -10 до 10: '))
 
 count = 0
-for i in range(n):
-    if lst[i] == k:
+for i in lst:
+    if i == k:
         count += 1
 
 print(f"В массиве число {k} содержится {count} раз.")

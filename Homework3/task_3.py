@@ -40,6 +40,6 @@ dic_ru = {1:'АВЕИНОРСТ',
 word = input('Задайте слово: ').upper()
 
 if is_Cyrillic(word):
-	print(sum([key for i in word for key, value in dic_ru.items() if i in value]))
+	print(sum(key for i in word for key, value in dic_ru.items() if i in value))
 else:
-	print(sum([key for i in word for key, value in dic_en.items() if i in value]))
+	print(sum(key for i in word for key, value in dic_en.items() if i in value))
