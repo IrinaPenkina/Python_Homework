@@ -33,3 +33,6 @@ if crop[-1] + crop[0] + crop[1] > sum_max:
 	sum_max = crop[-1] + crop[0] + crop[1]
 
 print(sum_max)
+
+for i in range(len(crop) - 2):
+	sum = crop[0]
